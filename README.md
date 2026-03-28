@@ -84,6 +84,3 @@ O repositório está organizado em diferentes atividades:
 Este projeto faz parte do processo de aprendizado e evolução no desenvolvimento web, servindo como base para projetos mais avançados no futuro.
 
 ---
-
-André Vítor
-Estudante de Análise e Desenvolvimento de Sistemas
