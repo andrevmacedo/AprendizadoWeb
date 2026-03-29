@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Perfil Profissional</title>
+    <style>
+        .cartao-perfil{
+            text-align: center;
+            border-style: groove;
+            width: 300px;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 0 auto;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1) ;
+            max-width: 100%;
+            background-color: rgb(105, 105, 105);
+        }
+        img{
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            margin: auto;
+        }
+        body { 
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        } 
+        /* Utilizado para centralizar verticalmente */
+        .link-linkedin{
+            border-style: groove;
+            border-radius: 8px;
+            width: 85px;
+            display: inline-block;
+            padding: 3px;
+            background-color: rgb(0, 0, 95);
+        }
+        .link-github{
+            border-style: groove;
+            border-radius: 8px;
+            width: 85px;
+            display: inline-block;
+            margin: 5px;
+            padding: 3px;
+            background-color: black;
+        }
+        .link-portifolio{
+            border-style: groove;
+            border-radius: 8px;
+            width: 85px;
+            display: inline-block;
+            padding: 3px;
+            background-color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .link-portifolio a{
+            text-decoration: none;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            /* Alinha a imagem com o texto */
+            color: white;
+            transition: 0.3s;
+        } 
+        /* Tirar o sublinhado do link sem alterar a div */
+        .link-portifolio:hover {
+            background-color: #2d86df;
+            transform: scale(1.05);
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        .link-github a{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;  
+            align-items: center;
+            color: white;
+            transition: 0.3s;
+        }
+        .link-github:hover {
+            background-color: #2d86df;
+            transform: scale(1.05); /* leve zoom na caixa*/
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        .link-linkedin a{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;  
+            align-items: center;
+            color: white;
+            transition: 0.3s;
+        }
+        .link-linkedin:hover {
+            background-color: #2d86df;
+            transform: scale(1.05);
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        .icon-linkedin {
+            width: 20px;
+            height: 20px;
+            filter: invert(1);
+            /* filter: invert(1); inverte a cor do PNG */
+        }
+        .icon-github{
+            width: 20px;
+            height: 20px;
+            filter: invert(1);
+        }
+        .icon-localizacao{
+            width: 15px;
+            height: 15px;
+        }
+        .bio{
+            text-align: justify;
+        }
+        .icon-python,
+        .icon-css,
+        .icon-html{
+            border-radius: 0%;
+            width: 25px;
+            height: 25px;
+            padding: 3px;
+        }
+        .icon-sqlite{
+            border-radius: 0%;
+            width: 40px;
+            height: 25px;
+        }
+        .cartao-perfil h4,h1,h2{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .background{
+            border-radius: 0%;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            inset: 0;
+        }
+    </style>
+</head>
+<body>
+    <img class="background" src="imgs/baixados (1).jpg">
+    <div class="cartao-perfil"> 
+        <img src="imgs/WhatsApp Image 2026-03-09 at 14.10.19 (1).jpeg" alt="Foto de perfil"> 
+        
+        <h1>André Vítor</h1> 
+        <h2>Desenvolvedor Full Stack</h2> 
+        
+        <p><img class="icon-localizacao" src="imgs/pin-de-localizacao.png">São Paulo, Brasil</p> 
+        
+        <p class="bio">
+            Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e em busca da primeira oportunidade na área.
+        </p> 
+
+        <h4>TECNOLOGIAS</h4>
+
+        <div class="tecnologias">
+            <img class="icon-python" src="imgs/python (1).png">
+            <img class="icon-sqlite" src="imgs/58482f85cef1014c0b5e4a84.png">
+            <img class="icon-css" src="imgs/250px-CSS3_logo_and_wordmark.svg.png">
+            <img class="icon-html" src="imgs/html-5.png">
+        </div>
+        <hr>
+
+        <div class="link-linkedin">
+            <a href="http://www.linkedin.com/in/andr%C3%A9-v%C3%ADtor-caldas-macedo-4b3274288" target="_blank"><img class="icon-linkedin" src="imgs/64px-Linkedin-png-linkedin-icon-1600.png">LinkedIn</a> 
+        </div>
+
+        <div class="link-github">
+            <a href="https://github.com/andrevmacedo" target="_blank"><img class="icon-github" src="imgs/64px-Octicons-mark-github.svg.png">Github</a>
+        </div>
+        
+    </div>
+</body>
+</html>
